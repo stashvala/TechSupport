@@ -7,13 +7,14 @@
         <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">   
         <script src="../js/jquery.min.js"></script>
         <script src="../bootstrap/js/bootstrap.min.js"></script>
+        <title></title>
 	</head>
 
 	<body>
 
 	    <div id="wrapper">
 
-	    	<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+	    	<nav class="navbar navbar-default navbar-static-top" style="margin-bottom: 0">
 			  	<div class="container-fluid">
 			    	<div class="navbar-header">
 			      		<a class="navbar-brand">FRI Tech Support</a>
@@ -76,7 +77,7 @@
 		                    </ul>
 		                </li><!--messages-->
 			        	<li class="dropdown">
-							<a class="dropdown-toggle" data-toggle="dropdown tooltip" title="Hello Staš Hvala!" href="#">
+							<a class="dropdown-toggle" data-toggle="dropdown" title="Hello Staš Hvala!" href="#">
                         		<div class="navbar-icons">
                         			<span class="glyphicon glyphicon-user"></span>
                     			</div>
@@ -90,7 +91,7 @@
 		                        </li>
 		                        <li class="divider"></li>
 		                        <li>
-		                        	<a href="index.html">
+		                        	<a href="../index.html">
 		                        		<span class="glyphicon glyphicon-log-out"></span>
 		                        		<label class="iconLabel">Logout</label>
 		                        	</a>
@@ -178,11 +179,13 @@
 				<div class="panel-body">
 					<div class="well well-sm well-ticket">
 						<div>
-							<span class="ticket-number">
-								<a href="ticketInfo.html" data-toggle="tooltip" title="Click for more details">#3</a>
-							</span>
-							<span class="ticket-title">DropDownMenu bug</span>
-							<span class="ticket-category">2nd level support</span>
+							<div class="ticket-leftside">
+								<span class="ticket-number">
+									<a href="ticketInfo.html" data-toggle="tooltip" title="Click for more details">#3</a>
+								</span>
+								<span class="ticket-title">DropDownMenu bug</span>
+								<span class="ticket-category">2nd level support</span>
+							</div>
 							<div class="ticket-rightside">
 								<span class="ticket-status-closed">Closed</span>
 								<span>(22.11.2015)</span>
@@ -214,11 +217,13 @@
 					</div>
 					<div class="well well-sm well-ticket">
 						<div>
-							<span class="ticket-number">
-								<a href="ticketInfo.html" data-toggle="tooltip" title="Click for more details">#2</a>
-							</span>
-							<span class="ticket-title">Server localhost error</span>
-							<span class="ticket-category">1st level support</span>
+							<div class="ticket-leftside">
+								<span class="ticket-number">
+									<a href="ticketInfo.html" data-toggle="tooltip" title="Click for more details">#2</a>
+								</span>
+								<span class="ticket-title">Server localhost error</span>
+								<span class="ticket-category">1st level support</span>
+							</div>
 							<div class="ticket-rightside">
 								<span class="ticket-status-opened">Opened</span>
 								<span>(22.11.2015)</span>
@@ -228,13 +233,15 @@
 					</div>
 					<div class="well well-sm well-ticket">
 						<div>
-							<span class="ticket-number">
-								<a href="ticketInfo.html" data-toggle="tooltip" title="Click for more details">#5</a>
-							</span>
-							<span class="ticket-title">Font size</span>
-							<span class="ticket-category">2nd level support</span>
+							<div class="ticket-leftside">
+								<span class="ticket-number">
+									<a href="ticketInfo.html" data-toggle="tooltip" title="Click for more details">#5</a>
+								</span>
+								<span class="ticket-title">Font size</span>
+								<span class="ticket-category">2nd level support</span>
+							</div>
 							<div class="ticket-rightside">
-								<span class="ticket-status-reopened">Reopened</span>
+								<span class="ticket-status-reopened">Pending</span>
 								<span>(22.11.2015)</span>
 								<span class='ticket-assignedTo'>@Nobody</span>
 							</div>
@@ -242,13 +249,15 @@
 					</div>
 					<div class="well well-sm well-ticket">
 						<div>
-							<span class="ticket-number">
-								<a href="ticketInfo.html" data-toggle="tooltip" title="Click for more details">#9</a>
-							</span>
-							<span class="ticket-title">Wrong build</span>
-							<span class="ticket-category">1st level support</span>
+							<div class="ticket-leftside">
+								<span class="ticket-number">
+									<a href="ticketInfo.html" data-toggle="tooltip" title="Click for more details">#9</a>
+								</span>
+								<span class="ticket-title">Wrong version</span>
+								<span class="ticket-category">1st level support</span>
+							</div>
 							<div class="ticket-rightside">
-								<span class="ticket-status-pending">Pending</span>
+								<span class="ticket-status-pending">Reopened</span>
 								<span>(22.11.2015)</span>
 								<span class='ticket-assignedTo'>@Me</span>
 							</div>

@@ -2,10 +2,211 @@
 <html>
 	<head>
 		<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+		<link rel="icon" href="../res/icons/technical-support-icon.ico" />
+		<link rel="stylesheet" type="text/css" href="../css/dashboard.css">
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">   
+        <script src="../js/jquery.min.js"></script>
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
 	</head>
 
 	<body>
-		<h1>TICKET INFO</h1>
+	    <div id="wrapper">
+
+	    	<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+			  	<div class="container-fluid">
+			    	<div class="navbar-header">
+			      		<a class="navbar-brand">FRI Tech Support</a>
+			    	</div>
+			      	
+			      	<ul class="nav navbar-top-links navbar-right">
+			        	<li class="dropdown">
+				        	<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        		<div class="navbar-icons">
+                        			<span class="badge">3</span>
+                        			<span class="glyphicon glyphicon-envelope"></span>
+                    			</div>
+                    		</a>
+                    		<ul class="dropdown-menu dropdown-messages">
+                        		<li>
+                        			<a href="#">
+		                                <div>
+		                                    <strong>Michael Jackson</strong>
+		                                    <span class="pull-right text-muted">
+		                                        <em>Today</em>
+		                                    </span>
+		                                </div>
+		                                <div>
+		                                	You're late with task #2, client is getting impatient! 
+		                                </div>
+		                            </a>
+		                        </li>
+		                        <li class="divider"></li>
+		                        <li>
+		                            <a href="#">
+		                                <div>
+		                                    <strong>John Little</strong>
+		                                    <span class="pull-right text-muted">
+		                                        <em>Yesterday</em>
+		                                    </span>
+		                                </div>
+		                                <div>
+		                                	You need to help me with task #4 :(
+		                                </div>
+		                            </a>
+		                        </li>
+		                        <li class="divider"></li>
+		                        <li>
+		                            <a href="#">
+		                                <div>
+		                                    <strong>Laura Paulie</strong>
+		                                    <span class="pull-right text-muted">
+		                                        <em>Yesterday</em>
+		                                    </span>
+		                                </div>
+		                                <div>I think I'm finished with task #3, can you review my code</div>
+		                            </a>
+		                        </li>
+		                        <li class="divider"></li>
+		                        <li>
+		                            <a class="text-center" href="#">
+		                                <strong>Read All Messages</strong>
+		                            </a>
+		                        </li>
+		                    </ul>
+		                </li><!--messages-->
+			        	<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" title="Hello Staš Hvala!" href="#">
+                        		<div class="navbar-icons">
+                        			<span class="glyphicon glyphicon-user"></span>
+                    			</div>
+                    		</a>
+		                    <ul class="dropdown-menu dropdown-user">
+		                        <li>
+		                        	<a href="#">
+		                        		<span class="glyphicon glyphicon-wrench"></span>
+		                        		<label class="iconLabel">Settings</label>
+		                        	</a>
+		                        </li>
+		                        <li class="divider"></li>
+		                        <li>
+		                        	<a href="../index.html">
+		                        		<span class="glyphicon glyphicon-log-out"></span>
+		                        		<label class="iconLabel">Logout</label>
+		                        	</a>
+		                        </li>
+		                    </ul>
+        				</li><!--user-->
+			      	</ul>
+			  	</div>
+			
+	            <div class="navbar-default sidebar" role="navigation">
+	                <div class="sidebar-nav navbar-collapse">
+	                    <ul class="nav" id="side-menu">
+	                        <li class="sidebar-search">
+	                            <div class="input-group custom-search-form">
+	                                <input type="text" class="form-control" placeholder="Search...">
+	                                <span class="input-group-btn">
+	                                <button class="btn btn-default" type="button">
+	                                    <span class="glyphicon glyphicon-search"></span>
+	                                </button>
+	                            </span>
+	                            </div>
+	                            <!-- /input-group -->
+	                        </li>
+	                        <li>
+	                            <a href="dashboard.html">
+		                            <span class="glyphicon glyphicon-home"></span>
+		                            <label class="iconLabel">Dashboard</label>
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="#">
+	                            	<span class="glyphicon glyphicon-tag"></span>
+		                            <label class="iconLabel">Tickets</label>
+		                            <div class="arrow">
+		                           		<span class="glyphicon glyphicon-chevron-left"></span>
+	                            	</div>
+	                            </a>
+	                            <ul class="nav nav-second-level">
+	                                <li>
+	                                    <a href="newTicket.html">
+		                                    <span class="glyphicon glyphicon-plus"></span>
+			                            	<label class="iconLabel">New Ticket</label>
+	                                    </a>
+	                                </li>
+	                                <li>
+	                                    <a href="ticketHistory.html">
+											<span class="glyphicon glyphicon-time"></span>
+			                            	<label class="iconLabel">My Ticket History</label>
+	                                    </a>
+	                                </li>
+	                            </ul>
+	                            <!-- /.nav-second-level -->
+	                        </li>
+	                        <li>
+	                            <a href="help.html">
+	                            	<span class="glyphicon glyphicon-question-sign"></span>
+			                        <label class="iconLabel">Help</label>
+	                            </a>
+	                        </li>    
+	                    </ul>
+	                </div>
+	                <!-- /.sidebar-collapse -->
+	            </div>
+	            <!-- /.navbar-static-side -->
+	        </nav>
+       	</div> <!-- /#wrapper -->
+
+	    <div id="page-wrapper">
+	    	<h1 class="page-header">Ticket Information</h1>
+	    	<div class="panel panel-primary panel-news">
+				<div class="panel-heading">
+					<span class="glyphicon glyphicon-tag"></span>
+					<label class="iconLabel">#3</label>
+				</div>
+				<div class="panel-body">
+					<div class="">
+					  	<form role="form">
+						    <div class="form-group">
+						    	<label for="clientID">Client ID:</label>
+						    	<input type="number" class="form-control" id="clientID" placeholder="Enter client indetification number">
+						    </div>
+						    <div class="form-group">
+						    	<label for="status">Status:</label>
+						    	<select class="form-control" id="status">
+						    		<option>Opened</option>
+						    		<option>Closed</option>
+						    		<option>Pending</option>
+						    		<option>Reopened</option>
+						    	</select>
+						    </div>
+						    <div class="form-group">
+						    	<label for="assignedTo">Assigned to:</label>
+						    	<select class="form-control" id="status">
+						    		<option>1st level support</option>
+						    		<option>2nd level support</option>
+						    	</select>
+						    </div>
+						    <div class="form-group">
+						    	<label for="issueTitle">Issue Title:</label>
+						    	<input type="text" class="form-control" id="IssueTitle" placeholder="Address your issue">
+						    </div>
+						    <div class="form-group">
+						    	<label for="IssueDescription">Issue description:</label>
+						    	<textarea rows="10" type="text" class="form-control" 
+						    	id="IssueDescription" placeholder="Carefully desribe your issue"></textarea>
+						    </div>
+						    <div class="form-group">
+						    	<label for="IssueSolution">Issue solution report:</label>
+						    	<textarea rows="10" type="text" class="form-control" 
+						    	id="IssueSolution" placeholder="How was the issue resolved">Try restarting your computer</textarea>
+						    </div>
+						    <button style="float: right" type="submit" class="btn btn-primary">Update Ticket</button>
+					  	</form>
+					</div>
+				</div>
+			</div>
+	    </div>
 	</body>
 
 </html>
