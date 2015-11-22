@@ -2,6 +2,37 @@
     width: 100%;
 }
 
+#page-wrapper {
+    padding: 0 15px;
+    min-height: 568px;
+    background-color: #fff;
+}
+
+@media(min-width:768px) {
+    #page-wrapper {
+        position: inherit;
+        margin: 0 0 0 250px;
+        padding: 0 30px;
+        border-left: 1px solid #e7e7e7;
+    }
+}
+
+.iconLabel {
+	margin-top: 3px;
+	margin-bottom: 3px;
+	margin-left: 15px;
+}
+
+/* TODO make badges smaller and align them with icons
+.iconBadge {
+
+}*/
+
+.navbar-icons {
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
 .navbar-top-links {
     margin-right: 0;
 }
@@ -17,6 +48,10 @@
 .navbar-top-links li a {
     padding: 15px;
     min-height: 50px;
+}
+
+.dropdown{
+	display: inline-block !important;
 }
 
 .navbar-top-links .dropdown-menu li {
@@ -38,21 +73,132 @@
 
 .navbar-top-links .dropdown-messages {
     margin-left: 5px;
-    width: 200px;
+    width: 310px;
     min-width: 0;
 }
 
 .navbar-top-links .dropdown-user {
     right: 0;
-    /*left: auto;*/
-    margin-left: 40px;
-    width: 310px;
-    min-width: 0;
+    left: auto;
 }
 
+.sidebar .sidebar-nav.navbar-collapse {
+    padding-right: 0;
+    padding-left: 0;
+}
 
-/*.dropDownLabel {
-	margin: 5px; 
-	/*margin-left: 10px
+.sidebar .sidebar-search {
+    padding: 15px;
+}
+
+.sidebar ul li {
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.sidebar ul li a.active {
+    background-color: #eee;
+}
+
+.sidebar .arrow {
+    float: right;
+}
+
+/* TODO hide second level */
+/*.sidebar .nav-second-level {
+	position: absolute;
+    top: 0;
+    visibility: hidden;
+    margin-top: -1px;
+}
+
+.sidebar li:hover .nav-second-level {
+	visibility: visible;
+	display: block;
 }*/
 
+.sidebar .nav-second-level li{
+    border-bottom: 0!important;
+}
+
+.sidebar .nav-second-level li a {
+    padding-left: 37px;
+}
+
+@media(min-width:768px) {
+    .sidebar {
+        z-index: 1;
+        position: absolute;
+        width: 250px;
+        margin-top: 1px;
+    }
+
+    .navbar-top-links .dropdown-messages{
+        margin-left: auto;
+    }
+}
+
+.panel-news {
+	margin: 50px auto 50px auto;
+}
+
+.panel-tickets {
+	margin: 50px auto 50px auto;
+}
+
+.well-ticket{
+	margin: 8px auto 8px auto !important;
+}
+
+.ticket-number {
+	text-align: left;
+}
+
+.ticket-title, .ticket-category{
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+.ticket-title {
+	font-weight: bold;
+}
+
+.ticket-category {
+	font-size: 80%;
+	color: #d3d3d3
+}
+
+.ticket-rightside{
+	float: right;
+}
+
+.ticket-assignedTo {
+	/* TODO naredi poravnavo */
+}
+
+.ticket-status-closed {
+	font-weight: bold;
+	color: #696969;
+}
+
+.ticket-status-opened {
+	font-weight: bold;
+	color: #228B22;
+}
+
+.ticket-status-reopened {
+	font-weight: bold;
+	color: #FF0000 ;
+}
+
+.ticket-status-pending {
+	font-weight: bold;
+	color: #FFD700;
+}
+
+.progress-bar {
+	/* TODO make progress bar smaller */
+}
+
+.faq {
+	font-size: 55% !important;
+}

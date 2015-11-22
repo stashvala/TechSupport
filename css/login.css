@@ -1,5 +1,5 @@
 body {
-    background: url('../res/login_background2.jpg') no-repeat fixed center center;
+    background: url('../res/background/login_background2.jpg') no-repeat fixed center center;
     background-size: cover;
     font-family: Montserrat;
 }
@@ -45,22 +45,22 @@ body {
 
 .login-block input#username {
 	/*user_icon is sprite, here we load top*/
-    background: #fff url('../res/user_icon.png') 20px top no-repeat;
+    background: #fff url('../res/icons/user_icon.png') 20px top no-repeat;
     background-size: 16px 80px;
 }
 
 .login-block input#username:focus {
-    background: #fff url('../res/user_icon.png') 20px bottom no-repeat;
+    background: #fff url('../res/icons/user_icon.png') 20px bottom no-repeat;
     background-size: 16px 80px;
 }
 
 .login-block input#password {
-    background: #fff url('../res/password_icon.png') 20px top no-repeat;
+    background: #fff url('../res/icons/password_icon.png') 20px top no-repeat;
     background-size: 16px 80px;
 }
 
 .login-block input#password:focus {
-    background: #fff url('../res/password_icon.png') 20px bottom no-repeat;
+    background: #fff url('../res/icons/password_icon.png') 20px bottom no-repeat;
     background-size: 16px 80px;
 }
 
@@ -108,12 +108,12 @@ footer
 
 @font-face {
     font-family: Montserrat;
-    src: url('../res/Montserrat.tff');
+    src: url('../res/fonts/Montserrat.tff');
     font-weight: bold;
 }
 
 
 @font-face {
     font-family: Silent Reaction;
-    src:   url("../res/Silent Reaction.tff")
+    src:   url("../res/fonts/Silent Reaction.tff")
 }

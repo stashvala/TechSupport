@@ -10,7 +10,6 @@
 	</head>
 
 	<body>
-
 	    <div id="wrapper">
 
 	    	<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
@@ -159,113 +158,35 @@
        	</div> <!-- /#wrapper -->
 
 	    <div id="page-wrapper">
-	    	<h1 class="page-header">Dashboard</h1>
+	    	<h1 class="page-header">Create a new ticket</h1>
 	    	<div class="panel panel-primary panel-news">
 				<div class="panel-heading">
-					<span class="glyphicon glyphicon-bell"></span>
-					<label class="iconLabel">News</label>
-				</div>
-				<div class="panel-body">
-					Urgent meeting will be held today at 4pm regarding the China powerplant in conference room "CSS" so scrum is postponed until further notice. Be prepared and focused!
-				</div>
-			</div>
-
-			<div class="panel panel-info panel-tickets">
-				<div class="panel-heading">
+					<span class="glyphicon glyphicon-plus"></span>
 					<span class="glyphicon glyphicon-tag"></span>
-					<label class="iconLabel">My Recent Tickets</label>
+					<label class="iconLabel">New ticket</label>
 				</div>
 				<div class="panel-body">
-					<div class="well well-sm well-ticket">
-						<div>
-							<span class="ticket-number">
-								<a href="ticketInfo.html" data-toggle="tooltip" title="Click for more details">#3</a>
-							</span>
-							<span class="ticket-title">DropDownMenu bug</span>
-							<span class="ticket-category">2nd level support</span>
-							<div class="ticket-rightside">
-								<span class="ticket-status-closed">Closed</span>
-								<span>(22.11.2015)</span>
-								<span class='ticket-assignedTo'>
-									<a href="#" data-toggle="modal" data-target="#richardsmith">
-										<!-- Modal -->
-										<div class="modal fade" id="richardsmith" role="dialog">
-											<div class="modal-dialog modal-sm">
-											  <div class="modal-content">
-											    <div class="modal-body">
-											      <p style="float: left;">
-											      	<img src="../res/avatar/vangogh_avatar.jpg" alt="avatar" style="
-											      	  width:60px;height:75px;">
-											      </p>
-											      <p style="float: right;">
-											          Position: Software developer
-											      	 <br>Age: 32
-											      	 <br>Status: Experienced<br>
-											      </p>
-											    </div>
-											  </div>
-											</div>
-										</div>
-										@Richard Smith
-									</a>
-								</span>
-							</div>
-						</div>
-					</div>
-					<div class="well well-sm well-ticket">
-						<div>
-							<span class="ticket-number">
-								<a href="ticketInfo.html" data-toggle="tooltip" title="Click for more details">#2</a>
-							</span>
-							<span class="ticket-title">Server localhost error</span>
-							<span class="ticket-category">1st level support</span>
-							<div class="ticket-rightside">
-								<span class="ticket-status-opened">Opened</span>
-								<span>(22.11.2015)</span>
-								<span class='ticket-assignedTo'>@Me</span>
-							</div>
-						</div>
-					</div>
-					<div class="well well-sm well-ticket">
-						<div>
-							<span class="ticket-number">
-								<a href="ticketInfo.html" data-toggle="tooltip" title="Click for more details">#5</a>
-							</span>
-							<span class="ticket-title">Font size</span>
-							<span class="ticket-category">2nd level support</span>
-							<div class="ticket-rightside">
-								<span class="ticket-status-reopened">Reopened</span>
-								<span>(22.11.2015)</span>
-								<span class='ticket-assignedTo'>@Nobody</span>
-							</div>
-						</div>
-					</div>
-					<div class="well well-sm well-ticket">
-						<div>
-							<span class="ticket-number">
-								<a href="ticketInfo.html" data-toggle="tooltip" title="Click for more details">#9</a>
-							</span>
-							<span class="ticket-title">Wrong build</span>
-							<span class="ticket-category">1st level support</span>
-							<div class="ticket-rightside">
-								<span class="ticket-status-pending">Pending</span>
-								<span>(22.11.2015)</span>
-								<span class='ticket-assignedTo'>@Me</span>
-							</div>
-						</div>
+					<div class="container">
+					  	<form role="form">
+						    <div class="form-group">
+						    	<input type="number" class="form-control" id="clientID" placeholder="Enter client indetification number">
+						    </div>
+						    <div class="form-group">
+						      	<label for="pwd">Password:</label>
+						      	<input type="password" class="form-control" id="pwd" placeholder="Enter password">
+						    </div>
+						    <div class="form-group">
+						    	<input type="text" class="form-control" id="IssueTitle" placeholder="Address your issue">
+						    </div>
+						    <div class="form-group">
+						    	<input type="text" class="form-control" id="IssueTitle" placeholder="Carefully desribe your issue">
+						    </div>
+						    <button style="float: right" type="submit" class="btn btn-primary">Submit Ticket</button>
+					  	</form>
 					</div>
 				</div>
 			</div>
-
-			<div class="progress">
-  				<div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width:25%"> 25% Closed Tickets </div>
-			</div>
-
-	    </div> <!-- /#page-wrapper -->
-
-
+	    </div>
 	</body>
-	
-
 
 </html>
