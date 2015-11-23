@@ -1,2 +1,0 @@
-1.) WireFrame - oblikuj stran
-2.) Vsako skico implementiraj z HTML(struktura) + CSS(oblika)
