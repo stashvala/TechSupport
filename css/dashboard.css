@@ -21,6 +21,7 @@
 	margin-top: 3px;
 	margin-bottom: 3px;
 	margin-left: 15px;
+    font-weight: bold;
 }
 
 
@@ -155,8 +156,12 @@
 	display: inline-block;
 }
 
-.ticket-rightside{
+.ticket-rightside {
 	display: inline-block;		
+}
+
+.ticket-assignedTo {
+    display: inline-block;
 }
 
 .ticket-status-closed {
@@ -177,6 +182,22 @@
 .ticket-status-pending {
 	font-weight: bold;
 	color: #FFD700;
+}
+
+.date-status-opened {
+    padding-right: 19px;
+}
+
+.date-status-reopened {
+    padding-right: 5px;
+}
+
+.date-status-pending {
+    padding-right: 17px;
+}
+
+.date-status-closed {
+    padding-right: 23px;
 }
 
 .progress {

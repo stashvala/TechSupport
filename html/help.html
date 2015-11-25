@@ -5,14 +5,14 @@
 		<link rel="icon" href="../res/icons/technical-support-icon.ico" />
 		<link rel="stylesheet" type="text/css" href="../css/dashboard.css">
         <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">   
-        <script src="../js/jquery.min.js"></script>
-        <script src="../bootstrap/js/bootstrap.min.js"></script>
+        
+        <title>Help</title>
 	</head>
 
 	<body>
 
 		<div id="wrapper">
-	    	<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+	    	<nav class="navbar navbar-default navbar-static-top" style="margin-bottom: 0">
 			  	<div class="container-fluid">
 			    	<div class="navbar-header">
 			      		<a class="navbar-brand">FRI Tech Support</a>
@@ -82,16 +82,18 @@
                     		</a>
 		                    <ul class="dropdown-menu dropdown-user">
 		                        <li>
-		                        	<a href="#">
-		                        		<span class="glyphicon glyphicon-wrench"></span>
-		                        		<label class="iconLabel">Settings</label>
+		                        	<a href="#">	
+		                        		<div>
+			                        		<span class="glyphicon glyphicon-wrench"></span>
+			                        		<span class="iconLabel">Settings</span>
+		                        		</div>
 		                        	</a>
 		                        </li>
 		                        <li class="divider"></li>
 		                        <li>
 		                        	<a href="../index.html">
 		                        		<span class="glyphicon glyphicon-log-out"></span>
-		                        		<label class="iconLabel">Logout</label>
+		                        		<span class="iconLabel">Logout</span>
 		                        	</a>
 		                        </li>
 		                    </ul>
@@ -116,13 +118,13 @@
 	                        <li>
 	                            <a href="dashboard.html">
 		                            <span class="glyphicon glyphicon-home"></span>
-		                            <label class="iconLabel">Dashboard</label>
+		                            <span class="iconLabel">Dashboard</span>
 	                            </a>
 	                        </li>
 	                        <li>
 	                            <a href="#">
 	                            	<span class="glyphicon glyphicon-tag"></span>
-		                            <label class="iconLabel">Tickets</label>
+		                            <span class="iconLabel">Tickets</span>
 		                            <div class="arrow">
 		                           		<span class="glyphicon glyphicon-chevron-left"></span>
 	                            	</div>
@@ -131,13 +133,13 @@
 	                                <li>
 	                                    <a href="newTicket.html">
 		                                    <span class="glyphicon glyphicon-plus"></span>
-			                            	<label class="iconLabel">New Ticket</label>
+			                            	<span class="iconLabel">New Ticket</span>
 	                                    </a>
 	                                </li>
 	                                <li>
 	                                    <a href="ticketHistory.html">
 											<span class="glyphicon glyphicon-time"></span>
-			                            	<label class="iconLabel">My Ticket History</label>
+			                            	<span class="iconLabel">My Ticket History</span>
 	                                    </a>
 	                                </li>
 	                            </ul>
@@ -146,7 +148,7 @@
 	                        <li>
 	                            <a href="help.html">
 	                            	<span class="glyphicon glyphicon-question-sign"></span>
-			                        <label class="iconLabel">Help</label>
+			                        <span class="iconLabel">Help</span>
 	                            </a>
 	                        </li>    
 	                    </ul>
@@ -163,7 +165,7 @@
 			<div class="panel panel-info panel-tickets">
 				<div class="panel-heading">
 					<span class="glyphicon glyphicon-question-sign"></span>
-					<label class="iconLabel">FAQ</label>
+					<span class="iconLabel">FAQ</span>
 				</div>
 				<div class="panel-body">
 			    	<p>
@@ -177,6 +179,10 @@
 			    </div>   	
 			</div>
 	    </div>
+	
+		<script src="../js/jquery.min.js"></script>
+		<script src="../bootstrap/js/bootstrap.min.js"></script>
+
 	</body>
 
 </html>

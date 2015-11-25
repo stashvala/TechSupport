@@ -5,15 +5,15 @@
 		<link rel="icon" href="../res/icons/technical-support-icon.ico" />
 		<link rel="stylesheet" type="text/css" href="../css/dashboard.css">
         <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">   
-        <script src="../js/jquery.min.js"></script>
-        <script src="../bootstrap/js/bootstrap.min.js"></script>
+        
+        <title>Ticket History</title>
 	</head>
 
 	<body>
 
 	    <div id="wrapper">
 
-	    	<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+	    	<nav class="navbar navbar-default navbar-static-top" style="margin-bottom: 0">
 			  	<div class="container-fluid">
 			    	<div class="navbar-header">
 			      		<a class="navbar-brand">FRI Tech Support</a>
@@ -85,14 +85,14 @@
 		                        <li>
 		                        	<a href="#">
 		                        		<span class="glyphicon glyphicon-wrench"></span>
-		                        		<label class="iconLabel">Settings</label>
+		                        		<span class="iconLabel">Settings</span>
 		                        	</a>
 		                        </li>
 		                        <li class="divider"></li>
 		                        <li>
 		                        	<a href="../index.html">
 		                        		<span class="glyphicon glyphicon-log-out"></span>
-		                        		<label class="iconLabel">Logout</label>
+		                        		<span class="iconLabel">Logout</span>
 		                        	</a>
 		                        </li>
 		                    </ul>
@@ -117,13 +117,13 @@
 	                        <li>
 	                            <a href="dashboard.html">
 		                            <span class="glyphicon glyphicon-home"></span>
-		                            <label class="iconLabel">Dashboard</label>
+		                            <span class="iconLabel">Dashboard</span>
 	                            </a>
 	                        </li>
 	                        <li>
 	                            <a href="#">
 	                            	<span class="glyphicon glyphicon-tag"></span>
-		                            <label class="iconLabel">Tickets</label>
+		                            <span class="iconLabel">Tickets</span>
 		                            <div class="arrow">
 		                           		<span class="glyphicon glyphicon-chevron-left"></span>
 	                            	</div>
@@ -132,13 +132,13 @@
 	                                <li>
 	                                    <a href="newTicket.html">
 		                                    <span class="glyphicon glyphicon-plus"></span>
-			                            	<label class="iconLabel">New Ticket</label>
+			                            	<span class="iconLabel">New Ticket</span>
 	                                    </a>
 	                                </li>
 	                                <li>
 	                                    <a href="ticketHistory.html">
 											<span class="glyphicon glyphicon-time"></span>
-			                            	<label class="iconLabel">My Ticket History</label>
+			                            	<span class="iconLabel">My Ticket History</span>
 	                                    </a>
 	                                </li>
 	                            </ul>
@@ -147,7 +147,7 @@
 	                        <li>
 	                            <a href="help.html">
 	                            	<span class="glyphicon glyphicon-question-sign"></span>
-			                        <label class="iconLabel">Help</label>
+			                        <span class="iconLabel">Help</span>
 	                            </a>
 	                        </li>    
 	                    </ul>
@@ -164,7 +164,7 @@
 			<div class="panel panel-info panel-tickets">
 				<div class="panel-heading">
 					<span class="glyphicon glyphicon-tag"></span>
-					<label class="iconLabel">Tickets</label>
+					<span class="iconLabel">Tickets</span>
 				</div>
 				<div class="panel-body">
 					<div class="well well-sm well-ticket">
@@ -178,30 +178,29 @@
 							</div>
 							<div class="ticket-rightside">
 								<span class="ticket-status-closed">Closed</span>
-								<span>(3.11.2015)</span>
-								<span class='ticket-assignedTo'>
-									<a href="#" data-toggle="modal" data-target="#richardsmith">
-										<!-- Modal -->
-										<div class="modal fade" id="richardsmith" role="dialog">
-											<div class="modal-dialog modal-sm">
-											  <div class="modal-content">
-											    <div class="modal-body">
-											      <p style="float: left;">
-											      	<img src="../res/avatar/vangogh_avatar.jpg" alt="avatar" style="
-											      	  width:60px;height:75px;">
-											      </p>
-											      <p style="float: right;">
-											          Position: Software developer
-											      	 <br>Age: 32
-											      	 <br>Status: Experienced<br>
-											      </p>
+								<span class="date-status-closed">(3.11.2015)</span>
+								<div class='ticket-assignedTo'>
+									<a data-toggle="modal" data-target="#richardSmithModal">@Richard Smith</a>
+									<!-- Modal -->
+									<div class="modal fade" id="richardSmithModal" role="dialog">
+										<div class="modal-dialog modal-sm" >
+										  	<div class="modal-content">
+											    <div class="modal-body" style="padding-bottom: 30px;">
+											      	<img  src="../res/avatar/vangogh_avatar.jpg" alt="avatar" style="
+											      	  width:60px;height:75px;float: left;">
+
+											      	<!--  style="float: right;"-->
+											  		<div>
+														  	 &nbsp;&nbsp;Position: Software developer
+														 <br>&nbsp;&nbsp;Age: 32
+														 <br>&nbsp;&nbsp;Status: Experienced<br>
+														<button class="btn btn-sm" type="button" style="float: right">Send message</button>
+													</div>
 											    </div>
-											  </div>
-											</div>
+										 	</div>
 										</div>
-										@Richard Smith
-									</a>
-								</span>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -216,7 +215,7 @@
 							</div>
 							<div class="ticket-rightside">
 								<span class="ticket-status-closed">Closed</span>
-								<span>(4.11.2015)</span>
+								<span class="date-status-closed">(4.11.2015)</span>
 								<span class='ticket-assignedTo'>@Me</span>
 							</div>
 						</div>
@@ -232,7 +231,7 @@
 							</div>
 							<div class="ticket-rightside">
 								<span class="ticket-status-closed">Closed</span>
-								<span>(5.11.2015)</span>
+								<span class="date-status-closed">(5.11.2015)</span>
 								<span class='ticket-assignedTo'>@Me</span>
 							</div>
 						</div>
@@ -248,7 +247,7 @@
 							</div>
 							<div class="ticket-rightside">
 								<span class="ticket-status-closed">Closed</span>
-								<span>(6.11.2015)</span>
+								<span class="date-status-closed">(6.11.2015)</span>
 								<span class='ticket-assignedTo'>@Me</span>
 							</div>
 						</div>
@@ -256,7 +255,9 @@
 				</div>
 			</div>
 	    </div> <!-- /#page-wrapper -->
-
+	
+	    <script src="../js/jquery.min.js"></script>
+	    <script src="../bootstrap/js/bootstrap.min.js"></script>
 
 	</body>
 
