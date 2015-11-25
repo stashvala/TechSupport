@@ -200,6 +200,14 @@
     padding-right: 23px;
 }
 
+div .modal-body-user {
+    padding-bottom: 70px;
+}
+
+.btn-snd-msg {
+    margin-top: 15px;
+}
+
 .progress {
 	margin-left: 25%;
 	margin-right: 25%;
